@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+            width: 500px;
+            background-color: burlywood;
+            margin-left: 500px;
+        }
+        #l1{
+            text-align: left;
+            margin-left: 200px;
+            height: 500px;
+            width: 500px;
+            background-color: burlywood;
+        }
+        input[type]{
+            background-color: lightcoral;
+        }
+        input[type="submit"]{
+            color: aqua;
+            margin-left: 50px;
+        }
+        input[id|="mail"]{
+            background-color: chartreuse;
+        }
+        label[for~="dt"]{
+            border: 5px solid khaki;
+        }
+        input[name$="e"]{
+            color: rgb(50, 19, 225);
+        }
+        input[type^="te"]{
+           border: 5px solid darkred;
+        }
+        input[id*="n"]{
+            background-color: rgb(205, 247, 143) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <form id="l1">
+        <h1>FORMS</h1>
+        <label for="name"> User Name:</label>
+        <input type="text" id="name" name="uname" placeholder="Name"/><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pswd"  required maxlength="8" /><br><br>
+        <label for="num">Phone:</label>
+        <input type="tel" id="num" name="number"/><br><br>
+        <label for="mail-id">Mail-id:</label>
+        <input type="email" id="mail-id" name="gmail"/><br><br>
+        <label for="dt">Date:</label>
+        <input type="date" id="dt" name="date"/><br><br>
+        <input type="submit" value="click here" /><br>
+    </form>
+    </div>
+</body>
+</html>
